@@ -1,0 +1,125 @@
+/* ========================================================= */
+/* === Company Dashboard Stylish Redesign ================== */
+/* ========================================================= */
+
+.company-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f0f6ff; /* light blue background */
+    padding: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.company-dashboard-content {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* --- Stat Cards --- */
+.company-stat-card {
+    background: linear-gradient(135deg, #e0f2ff, #f8fbff);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.company-stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Circle icon container */
+.company-stat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #2563eb; /* blue circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* Stat text */
+.company-stat-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e3a8a;
+}
+
+.company-stat-title {
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+/* --- Job Post Status Badges --- */
+.company-status-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+/* Status colors */
+.company-status-badge.active {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.company-status-badge.closed {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+.company-status-badge.draft {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+/* --- Table Styling --- */
+.company-table-header-row {
+    background-color: #e0f2fe !important;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.company-table-row:hover {
+    background-color: #f1f5f9 !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+    .company-dashboard-container {
+        padding: 16px;
+    }
+
+    .company-stat-card {
+        padding: 16px;
+    }
+
+    .company-stat-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+
+    .company-stat-value {
+        font-size: 1.4rem;
+    }
+}
